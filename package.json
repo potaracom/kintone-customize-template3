@@ -1,0 +1,23 @@
+{
+  "name": "kintone-customize-template",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "ws": "ws --https --cert ../localhost+2.pem --key ../localhost+2-key.pem",
+    "dev": "kintone-customize-uploader manifest.dev.json",
+    "prod": "kintone-customize-uploader manifest.prod.json",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@cybozu/eslint-config": "^11.0.0",
+    "@kintone/customize-uploader": "^3.0.8",
+    "@kintone/dts-gen": "^3.0.5",
+    "eslint": "^7.10.0",
+    "local-web-server": "^4.2.1",
+    "prettier": "^2.1.2",
+    "typescript": "^4.0.3"
+  }
+}
