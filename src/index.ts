@@ -1,4 +1,4 @@
-(function () {
+(() => {
   "use strict";
 
   interface IndexEvent {
@@ -20,11 +20,11 @@
     type: string;
   }
 
-  kintone.events.on("app.record.index.show", function (event: IndexEvent) {
-    console.log(event);
+  kintone.events.on("app.record.index.show", (event: IndexEvent) => {
+    console.log(Object.values(event));
   });
 
-  kintone.events.on("app.record.detail.show", function (event: DetailEvent) {
-    console.log(event);
+  kintone.events.on("app.record.detail.show", (event: DetailEvent) => {
+    console.log(Object.values(event));
   });
 })();
